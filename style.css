@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'Gilroy';
     --purple-text: rgb(62, 35, 127);
     --card: #201E43;
     --background: rgb(21, 8, 52);
@@ -101,10 +101,12 @@
 }
 
 .card-ba {
-    margin: 5px 18px;
+    text-align: left;
+    font: bold;
+    margin: 5px 5px;
     border-radius: 5px;
-    height: 40%;
-    padding: 0 1rem;
+    height: 30%;
+    padding: 1rem 1rem;
     background: linear-gradient(135deg, #868CFF 0%, #4318FF 100%);
 
 }
@@ -124,14 +126,15 @@ a {
 
 .third button {
     text-align: center;
-    margin: 12px 0;
-    padding: 7px;
-    width: 100%;
+    margin: 18px 0;
+    padding: 8px;
+    width: 150px;
+    color: #868CFF;
 }
 
 .third button::placeholder {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
 }
 
 .sidebar img {
@@ -154,6 +157,7 @@ a {
     position: absolute;
     top: 50px;
     left: 113px;
+    color: #fff;
 }
 
 #pro {
@@ -168,14 +172,16 @@ a {
     height: 30px;
     border-radius: 10px;
     border: none;
-    background-color: blueviolet;
+    background-color: var(--card);
     margin: 2rem;
     padding: 26px;
 }
 
 #search::placeholder {
     color: #fff;
-    padding-left: 20px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 #sea {
@@ -188,7 +194,7 @@ a {
 #filter {
     position: absolute;
     top: 48px;
-    left: 740px;
+    left: 760px;
 }
 
 details[open] summary::before {
@@ -212,7 +218,8 @@ details {
 .text {
     display: flex;
     flex-direction: column;
-    margin: 8px 20px;
+    align-content: center;
+    margin: 13px 20px;
 }
 
 .info {
@@ -247,7 +254,7 @@ h3 {
    background-color: #201E43;
    border-radius: 14px;
    height: 321px; 
-   width: 255px;
+   width: 250px;
    padding: 0.6rem;
    color: #bcbcbc;
    cursor: grab;
@@ -267,6 +274,7 @@ h3 {
     padding-top: 2rem;
     margin: 5rem .4rem;
 }
+
 .cards {
     display: flex;
     margin: 20px ;
@@ -275,19 +283,19 @@ h3 {
 
 #book-img1 {
     position: absolute;
-    top: 210px;
+    top: 280px;
     left: 470px;
 }
 
 #book-img2 {
     position: absolute;
-    top: 210px;
+    top: 280px;
     left: 755px;
 }
 
 #book-img3 {
     position: absolute;
-    top: 210px;
+    top: 280px;
     left: 1035px;
 }
 
@@ -295,9 +303,10 @@ h3 {
     background-color: #201E43;
     position: absolute;
     border-radius: 20px;
-    top: 370px;
+    top: 450px;
     transform: translateX(14%);
 }
+
 .cards .card {
     margin: 0 15px;
 }
