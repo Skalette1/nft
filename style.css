@@ -1,7 +1,12 @@
+@import url(./reset.css);
+@import url(./layout.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Gilroy';
+    font-family: 'Poppins';
     --purple-text: rgb(62, 35, 127);
     --card: #201E43;
     --background: rgb(21, 8, 52);
@@ -9,8 +14,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr ;
-    grid-template-rows: .3fr .5fr 1fr;
+    grid-template-columns: 200px auto ;
+    /* grid-template-rows: .2fr .5fr .3fr; */
     gap: 15px;
     grid-template-areas: 
     "sidebar search nig"
@@ -19,8 +24,8 @@
     ;
     background-color: var(--background);
     color: #fff;
-        /* height: 100vh;*/
-    width: 1550px; 
+        /* height: 100vh; */
+    width: 1700px; 
 }
 
 .sidebar {
@@ -36,15 +41,13 @@
 
 #hov {
     padding-left: 9px;
-    width:100%;
+    width:105%;
     cursor: pointer;
     text-align: center;
     position: relative;
+    margin: 10px 0;
 }
 
-#hov img {
-    text-align: center;
-}
 
 #hov:hover::before {
     content: url('Group\ 141.png') ;
@@ -106,7 +109,7 @@
     margin: 5px 5px;
     border-radius: 5px;
     height: 30%;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     background: linear-gradient(135deg, #868CFF 0%, #4318FF 100%);
 
 }
@@ -121,7 +124,6 @@ a {
     text-align: left;
     color: #fff;
     margin-top: 7px;
-
 }
 
 .third button {
@@ -180,7 +182,7 @@ a {
 #search::placeholder {
     color: #fff;
     padding-left: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
@@ -193,8 +195,8 @@ a {
 
 #filter {
     position: absolute;
-    top: 48px;
-    left: 760px;
+    top: 49px;
+    left: 850px;
 }
 
 details[open] summary::before {
@@ -208,7 +210,7 @@ details {
 .nig {
     grid-area: nig;
     display: flex;
-    margin: 30px 40px;
+    margin: 35px -170px;
 }
 
 .nft {
@@ -229,11 +231,16 @@ details {
     font-size: 1.1rem;
 }
 
+nav {
+    margin-right: 170px;
+}
+
 nav ul li{
     list-style: none;
     display: inline;
     margin: 0 17px;
     color: #dad2d2;
+    /* transform: translateX(-50%); */
 }
 
 a {
@@ -283,28 +290,28 @@ h3 {
 
 #book-img1 {
     position: absolute;
-    top: 280px;
-    left: 470px;
+    top: 240px;
+    left: 465px;
 }
 
 #book-img2 {
     position: absolute;
-    top: 280px;
-    left: 755px;
+    top: 240px;
+    left: 750px;
 }
 
 #book-img3 {
     position: absolute;
-    top: 280px;
-    left: 1035px;
+    top: 240px;
+    left: 1030px;
 }
 
 #Bookmark {
     background-color: #201E43;
     position: absolute;
     border-radius: 20px;
-    top: 450px;
-    transform: translateX(14%);
+    top: 400px;
+    transform: translateX(15%);
 }
 
 .cards .card {
@@ -327,11 +334,11 @@ h3 {
 .ball {
     grid-area: right;
     background-color: var(--card);
-    width: 300px;
-    height: 100%;
+    width: 350px;
+    height: 102%;
     border-radius: 15px;
     border: none;
-    margin: 0 24px;
+    margin: -10px -200px;
     display: flex;
     flex-direction: column;
 }
@@ -354,10 +361,11 @@ h3 {
 }
 
 .ball img {
-    width: 80%;
+    width: 83%;
     text-align: center;
     margin: 2.1rem 2rem;
 }
+
 .ball .niz {
     display: flex;
     justify-content: space-around;
@@ -383,11 +391,11 @@ h3 {
 .rating {
     grid-area: rating;
     background-color: var(--card);
-    width: 330px;
-    height: 90%;
+    width: 350px;
+    height: 95%;
     border-radius: 15px;
     color: #fff;
-    margin-left: 25px;
+    margin-left: -200px;
     justify-content: space-evenly;
     align-content: space-around;
 }
@@ -395,18 +403,17 @@ h3 {
 .rating-info {
     display: flex;
     justify-content: space-between;
-    margin: 20px 24px;
+    margin: 10px 24px;
 }
 
 .rating img {
-    margin: 10px 19px;
+    margin: 15px 15px;
 }
-
 
 .human {
     display: flex;
-    justify-content: space-evenly;
-    margin: 2.7rem .3rem;
+    justify-content: space-around;
+    margin: 1rem .1rem;
 }
 
 .human-info {
@@ -442,29 +449,48 @@ h3 {
 
 .table {
     grid-area: table;
-    padding: 1.4rem;
-    width: 100%;
+    /* padding: .5rem;
+    width: 95%; */
     text-align: center;
+    /* height: 10%; */
+    width: 950px;
+    height: 190px;
+    transform: translateY(-25%);
+    /* margin-left: 10px; */
     
 }
 
 .table-info {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    align-items: end;
+    transform: translateY(110%);
+    gap: 24px;
+    margin: -.5rem 4rem;
 } 
 
+.table-info h2 {
+    margin-left: 15px;
+}
+
 .table .det {
-    margin-right: 10px;
+    margin-right: 30px;
+}
+
+.table-info summary {
+    background-color: var(--card);
+    width: 150px;
 }
 
 .table tr td {
-    margin: 15px;
-    padding: 2.2rem;
+    margin-left: 575px;
+    padding: 1.4rem;
+    /* transform: translateX(80%); */
+    /* padding-left: 1rem; */
 }
 
 .table-cont {
-    margin: 15px;
+    margin: 75px;
     background-color: var(--card);
     border-radius: 15px;
 }
